@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Code Camp Form</title>
+    <link rel="stylesheet" href="FCC-Form.css">
+</head>
+
+<body>
+    <h1 id="title">Exercise Survey Form</h1>
+    <p id="description">Help us improve our gym equiptment</p>
+    <div id="form-div">
+        <form id="survey-form" action="/Snorlax">
+            <p>
+                <label for="name" id="name-label">Name</label>
+                <input type="text" name="name" id="name" required placeholder="Please enter your name">
+            </p>
+            <p>
+                <label for="email" id="email-label">Email</label>
+                <input type="email" name="email" id="email" required placeholder="Please enter your email">
+            </p>
+            <p>
+                <label for="number" id="number-label">Age</label>
+                <input type="number" name="number" id="number" min="1" max="100" required placeholder="Age">
+            </p>
+            <p>
+                <label for="dropdown">Select the execise equiptment you want most added to the gym</label>
+                <select name="dropdown" id="dropdown">
+                    <option>--Please choose an option--</option>
+                    <option>Free weights</option>
+                    <option>Machines</option>
+                    <option>Cardio equiptment</option>
+                </select>
+            </p>
+            <p id="radio-title">
+                Favorite workout type
+            </p>
+            <P>
+                <input type="radio" id="cardio" name="execise-type" value="cardio">
+                <label for="cardio">Cardio</label>
+            </P>
+            <P>
+                <input type="radio" id="powerlifting" name="execise-type" value="powerlifting">
+                <label for="powerlifting">Powerlifting</label>
+            </P>
+            <p>
+                <input type="radio" id="bodybuilding" name="execise-type" value="bodybuilding">
+                <label for="bodybuilding">Bodybuilding</label>
+            </p>
+            <p id="checkbox-title">
+                Would you attend any of the following classes if taught at the gym?
+            </p>
+            <p>
+                <input type="checkbox" id="yoga" name="classes" value="yoga">
+                <label for="yoga">Yoga</label>
+            </p>
+            <p>
+                <input type="checkbox" id="olympic" name="classes" value="olympic">
+                <label for="olympic">Olympic Lifting</label>
+            </p>
+            <p>
+                <input type="checkbox" id="boxing" name="classes" value="boxing">
+                <label for="boxing">Boxing</label>
+            </p>
+            <p>
+                <input type="checkbox" id="jiu jitsu" name="classes" value="jiu jitsu">
+                <label for="jiu jitsu">Jiu Jitsu</label>
+            </p>
+            <p>
+                <label for="">Any other suggestions?</label>
+                <textarea id="comments" name="comments" placeholder="Enter your comment here..."></textarea>
+            </p>
+            <button id="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
